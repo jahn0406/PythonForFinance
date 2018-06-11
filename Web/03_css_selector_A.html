@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>data science</title>
+    <style media = "screen">
+
+    /*
+      selector
+      - id, class, tag_name 세가지를 주로 이용해서 select 합닏 ㅏ
+      - 속성값으로 select가 가능합니다
+      - css 속성을 추가하기 위해 특정 element를 선택할 때 사용
+    */
+
+    /* 1. ID Selector  */
+    /* ID를 select 하기 위해서 #(아이디이름)을 사용합니다*/
+    #ds2, #ds1{
+      color : red ;
+    }
+
+    /* 2. Class */
+    /* class 를 select하기 우위해서 .(class name)을 사용합니다 */
+    .ds{
+      font-size : 24px;
+    }
+
+    .ds3{
+      font-weight : bold;
+    }
+
+    /* 3. not */
+    .ds:not(.ds2){
+      background-color: yellow
+    }
+
+    /* 4. first child : 가장 앞에 있는 element를 선택할 때 사용 */
+    .ds:first-child{
+      color : red;
+    }
+
+    /* 5. last child : 가장 마지막 있는 element를 선택할 때 사용 */
+    .ds:last-child{
+      color : blue;
+    }
+
+    /* 6. nth-child : n번째 element를 선택할 때 사용 */
+    .ds:nth-child{
+      color : black;
+    }
+
+    /* 7. depth : element level, 깊이를 선택 */
+    /* 공백 문자 : 하위 엘레먼트를 모두 셀렉트 합니다. */
+    /*  > : 바로 아래 depth에 대한 element만 select 합니다 */
+    /* tag-name을 select 할 때는 그냥 태그 이름만 적어주면 됩니다 */
+    /* 바로 하위 element 를 찾으려고 할 때는 부등호만 사용하면 됩니다 */
+    .contants > hi{
+      color : red
+    }
+
+  </head>
+  <body>
+
+/* p#ds${ds$}*2 */
+<p id="ds1">ds1</p>
+<p id="ds2">ds2</p>
+
+/* <p id = "ds1">ds1</p>
+<p> id = "ds2">ds2</p> */
+
+/* p.ds.ds${ds$}*5 */
+<p class="ds ds1 data">ds1</p>
+<p class="ds ds2 data">ds2</p>
+<p class="ds ds3 science">ds3</p>
+<p class="ds ds4 science">ds4</p>
+<p class="ds ds5 science">ds5</p>
+
+/*div.contants>h1{inner1}+div.txt>h1{inner2}*/
+<div class="contants">
+  <h1>inner1</h1>
+  <div class="txt">
+    <h1>inner2</h1>
+  </div>
+</div>
+
+
+  </body>
+</html>

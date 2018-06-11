@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  <!--1. div : layout element-->
+  <div style = "width:500px; height : 200px ; background-color : red">div1</div>
+    <p>div1</p>
+    <p>div1</p>
+    <p>div1</p>
+  <div>div2</div>
+  <div>div3</div>
+
+  <!--2. table : 로우와 컬럼이 있는 테이블 모양을 나타낼때 사용하는 엘리먼트 입니다 -->
+  <!--table>caption{테이블}+thead>tr>th{dss$}*2^^tbody>tr>th{dss$@3}*2
+  + : caption 과 동일한 레벨에서 생성
+  ^^  :  다시 맨 상위 레벨로 올라-->
+  <table>
+    <caption>테이블</caption>
+    <thead>
+      <tr>
+        <th>dss1</th>
+        <th>dss2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>dss3</th>
+        <th>dss4</th>
+      </tr>
+    </tbody>
+  </table>
+  <!--3. ul, li :list element-->
+  <ul>
+    <li>ul_li_1</li>
+    <li>ul_li_2</li>
+    <li>ul_li_3</li>
+  </ul>
+  <!--4. a: link element-->
+  <!-- href 속성에 url을 넣습니다 -->
+  <a href = "http://google.com" target ="_blank">google</a>
+  <ul>
+  <a href = "file:///Users/taeahn/Desktop/pythonstudy/finance/01_html_basic.html" target = "_blank">01_html</a>
+
+  <!--5. image : 이미지-->
+  <img style = "width:200px "src="http://cdn.www.fastcampus.co.kr/wp-content/uploads/2017/11/fastcampus_logo_positive-1.png" alt="">
+
+  <!--6. iframe : 외부 url 링크 페이지를 보여주기 위한 element-->
+  <br>
+  <iframe src = "file:///Users/taeahn/Desktop/pythonstudy/finance/01_html_basic.html" width = "400" height = "400"></iframe>
+
+  <!--7. 입력 : input(text, password, radio, checkbox)-->
+  <input type ="text" name="" value ="" placeholder="이메일"><br>
+  <input type="password" name="" value="" placeholder="패스워드"><br>
+
+  <input type="radio" name="radio1" value="">라디오1</input>
+  <input type="radio" name="radio1" value="">라디오2</input><br>
+  <input type="radio" name="radio2" value="">라디오3</input>
+  <input type="radio" name="radio2" value="">라디오4</input>
+  <input type="radio" name="radio2" value="">라디오5</input><br>
+
+  <input type="checkbox" name="" value="">체크박스</input>
+  <input type="checkbox" name="" value="">체크박스</input><br>
+  </body>
+
+  <!--8. textarea : 여러줄을 입력받는 element 입니다-->
+  <textarea name = "name" rows = "8" cols = "30" style = "resize : none"></textarea>
+
+  <!--9. select, option : 옵션을 선택 할 수 있는 dropdown element-->
+  <!--select>option[value=$]{option $}*3-->
+  <select name="" id="">
+    <option value="1">option 1</option>
+    <option value="2">option 2</option>
+    <option value="3">option 3</option>
+  </select>
+
+  <!--10. button : 버튼을 나타내는 element-->
+  <button type = "button" name = "button" onclick= "javascript:(location.href = 'http://finance.naver.com/')">Click</button>
+
+</html>
